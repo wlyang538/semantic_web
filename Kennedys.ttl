@@ -1,0 +1,1426 @@
+# baseURI: http://www.franz.com/simple.owl
+
+@prefix : <http://www.franz.com/simple.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.franz.com/simple.owl>
+  rdf:type owl:Ontology ;
+.
+:Actor
+  rdf:type :Profession ;
+.
+:Ambassador
+  rdf:type :Profession ;
+.
+:Army
+  rdf:type :Profession ;
+.
+:Attorney
+  rdf:type :Profession ;
+.
+:AttorneyGeneral
+  rdf:type :Profession ;
+.
+:Banker
+  rdf:type :Profession ;
+.
+:BodyBuilder
+  rdf:type :Profession ;
+.
+:BostonUniversity
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "Boston University" ;
+.
+:Broadcaster
+  rdf:type :Profession ;
+.
+:Brown
+  rdf:type :College ;
+  :ivyLeague "true"^^xsd:boolean ;
+.
+:Business
+  rdf:type :Profession ;
+.
+:CabinetSecretary
+  rdf:type :Profession ;
+.
+:CampaignOrganizer
+  rdf:type :Profession ;
+.
+:CatholicUniversity
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "Catholic University" ;
+.
+:College
+  rdf:type owl:Class ;
+  rdfs:label "College" ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Columbia
+  rdf:type :College ;
+  :ivyLeague "true"^^xsd:boolean ;
+.
+:Congressman
+  rdf:type :Profession ;
+.
+:DistrictAttorney
+  rdf:type :Profession ;
+.
+:Doctor
+  rdf:type :Profession ;
+.
+:Editor
+  rdf:type :Profession ;
+.
+:Female
+  rdf:type :Gender ;
+.
+:Gender
+  rdf:type owl:Class ;
+  rdfs:label "Gender"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+:GeorgeWashington
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "George Washington University" ;
+.
+:GeorgetownUniversity
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "Georgetown University" ;
+.
+:Goverment
+  rdf:type :Profession ;
+.
+:Governor
+  rdf:type :Profession ;
+.
+:Harvard
+  rdf:type :College ;
+  :ivyLeague "true"^^xsd:boolean ;
+.
+:HomeMaker
+  rdf:type :Profession ;
+.
+:LtGovernor
+  rdf:type :Profession ;
+.
+:Male
+  rdf:type :Gender ;
+.
+:ManhattanvilleCollege
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "Manhattanville College" ;
+.
+:Matriarch
+  rdf:type owl:Class ;
+  rdfs:label "Matriarch"^^xsd:string ;
+  rdfs:subClassOf :Person ;
+.
+:Model
+  rdf:type :Profession ;
+.
+:NYU
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "New York University" ;
+.
+:Navy
+  rdf:type :Profession ;
+.
+:NonProfit
+  rdf:type :Profession ;
+.
+:PR
+  rdf:type :Profession ;
+.
+:Patriarch
+  rdf:type owl:Class ;
+  rdfs:label "Patriarch"^^xsd:string ;
+  rdfs:subClassOf :Person ;
+.
+:PeaceCorp
+  rdf:type :Profession ;
+.
+:Person
+  rdf:type owl:Class ;
+  rdfs:label "Person" ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Person1
+  rdf:type :Patriarch ;
+  :almaMater :Harvard ;
+  :birthYear 1888 ;
+  :deathYear 1969 ;
+  :firstName "Joseph" ;
+  :hasChild :Person11 ;
+  :hasChild :Person13 ;
+  :hasChild :Person15 ;
+  :hasChild :Person17 ;
+  :hasChild :Person3 ;
+  :hasChild :Person4 ;
+  :hasChild :Person6 ;
+  :hasChild :Person7 ;
+  :hasChild :Person9 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Patrick" ;
+  :name "Joseph Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/Joseph_Kennedy.jpg> ;
+  :profession :Ambassador ;
+  :profession :Banker ;
+  :profession :Producer ;
+  :sex :Male ;
+  :spouse :Person2 ;
+  rdfs:label "Joseph Kennedy" ;
+.
+:Person10
+  rdf:type :Person ;
+  :almaMater :Yale ;
+  :birthYear 1915 ;
+  :firstName "Robert" ;
+  :hasChild :Person25 ;
+  :hasChild :Person26 ;
+  :hasChild :Person28 ;
+  :hasChild :Person31 ;
+  :hasChild :Person33 ;
+  :lastName "Shriver" ;
+  :middleInitial "Sargent" ;
+  :name "Robert Shriver" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/2002F_Shriver12.jpg> ;
+  :profession :Ambassador ;
+  :profession :Navy ;
+  :profession :PeaceCorp ;
+  :sex :Male ;
+  :spouse :Person9 ;
+  rdfs:label "Robert Shriver" ;
+.
+:Person11
+  rdf:type :Person ;
+  :almaMater :RosemontCollege ;
+  :birthYear 1924 ;
+  :firstName "Patricia" ;
+  :hasChild :Person35 ;
+  :hasChild :Person37 ;
+  :hasChild :Person39 ;
+  :hasChild :Person41 ;
+  :lastName "Kennedy" ;
+  :name "Patricia Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/Patriciakennedylawford.jpg> ;
+  :profession :HomeMaker ;
+  :profession :Producer ;
+  :sex :Female ;
+  :spouse :Person12 ;
+  rdfs:label "Patricia Kennedy" ;
+.
+:Person12
+  rdf:type :Person ;
+  :birthYear 1923 ;
+  :deathYear 1984 ;
+  :firstName "Peter" ;
+  :hasChild :Person35 ;
+  :hasChild :Person37 ;
+  :hasChild :Person39 ;
+  :hasChild :Person41 ;
+  :lastName "Lawford" ;
+  :name "Peter Lawford" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/220px-Peter_Lawford_in_Royal_Wedding_(2).jpg> ;
+  :profession :Actor ;
+  :sex :Male ;
+  :spouse :Person11 ;
+  rdfs:label "Peter Lawford" ;
+.
+:Person13
+  rdf:type :Person ;
+  :almaMater :UniversityofVirginia ;
+  :birthYear 1925 ;
+  :deathYear 1968 ;
+  :firstName "Robert" ;
+  :hasChild :Person42 ;
+  :hasChild :Person44 ;
+  :hasChild :Person47 ;
+  :hasChild :Person50 ;
+  :hasChild :Person51 ;
+  :hasChild :Person54 ;
+  :hasChild :Person56 ;
+  :hasChild :Person58 ;
+  :hasChild :Person60 ;
+  :hasChild :Person62 ;
+  :hasChild :Person64 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Francis" ;
+  :name "Robert Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/196px-Robertkennedy.jpg> ;
+  :profession :AttorneyGeneral ;
+  :profession :Navy ;
+  :profession :Senator ;
+  :sex :Male ;
+  :spouse :Person14 ;
+  rdfs:label "Robert Kennedy" ;
+.
+:Person14
+  rdf:type :Person ;
+  :almaMater :ManhattanvilleCollege ;
+  :birthYear 1928 ;
+  :firstName "Ethel" ;
+  :hasChild :Person42 ;
+  :hasChild :Person44 ;
+  :hasChild :Person47 ;
+  :hasChild :Person50 ;
+  :hasChild :Person51 ;
+  :hasChild :Person54 ;
+  :hasChild :Person56 ;
+  :hasChild :Person58 ;
+  :hasChild :Person60 ;
+  :hasChild :Person62 ;
+  :hasChild :Person64 ;
+  :lastName "Skakel" ;
+  :name "Ethel Skakel" ;
+  :profession :HomeMaker ;
+  :profession :NonProfit ;
+  :sex :Female ;
+  :spouse :Person13 ;
+  rdfs:label "Ethel Skakel" ;
+.
+:Person15
+  rdf:type :Person ;
+  :almaMater :ManhattanvilleCollege ;
+  :birthYear 1928 ;
+  :firstName "Jean" ;
+  :hasChild :Person66 ;
+  :hasChild :Person67 ;
+  :hasChild :Person68 ;
+  :hasChild :Person70 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Ann" ;
+  :name "Jean Kennedy" ;
+  :profession :Ambassador ;
+  :profession :NonProfit ;
+  :profession :Writer ;
+  :sex :Female ;
+  :spouse :Person16 ;
+  rdfs:label "Jean Kennedy" ;
+.
+:Person16
+  rdf:type :Person ;
+  :birthYear 1927 ;
+  :deathYear 1990 ;
+  :firstName "Stephen" ;
+  :hasChild :Person66 ;
+  :hasChild :Person67 ;
+  :hasChild :Person68 ;
+  :hasChild :Person70 ;
+  :lastName "Smith" ;
+  :middleInitial "Edward" ;
+  :name "Stephen Smith" ;
+  :profession :CampaignOrganizer ;
+  :sex :Female ;
+  :spouse :Person15 ;
+  rdfs:label "Stephen Smith" ;
+.
+:Person17
+  rdf:type :Person ;
+  :almaMater :Harvard ;
+  :almaMater :UniversityofVirginia ;
+  :birthYear 1932 ;
+  :deathYear "2009"^^xsd:int ;
+  :firstName "Edward" ;
+  :hasChild :Person72 ;
+  :hasChild :Person74 ;
+  :hasChild :Person76 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Moore" ;
+  :name "Edward Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/Ted_Kennedy.jpg> ;
+  :profession :Army ;
+  :profession :Senator ;
+  :sex :Male ;
+  :spouse :Person18 ;
+  :spouse :Person19 ;
+  rdfs:label "Edward Kennedy" ;
+.
+:Person18
+  rdf:type :Person ;
+  :almaMater :ManhattanvilleCollege ;
+  :birthYear 1936 ;
+  :firstName "Virginia" ;
+  :hasChild :Person72 ;
+  :hasChild :Person74 ;
+  :hasChild :Person76 ;
+  :lastName "Bennett" ;
+  :middleInitial "Joan" ;
+  :name "Virginia Bennett" ;
+  :profession :HomeMaker ;
+  :profession :Model ;
+  :sex :Female ;
+  :spouse :Person17 ;
+  rdfs:label "Virginia Bennett" ;
+.
+:Person19
+  rdf:type :Person ;
+  :birthYear 1954 ;
+  :firstName "Victoria" ;
+  :lastName "Reggie" ;
+  :middleInitial "Anne" ;
+  :name "Victoria Reggie" ;
+  :profession :Attorney ;
+  :sex :Female ;
+  :spouse :Person17 ;
+  rdfs:label "Victoria Reggie" ;
+.
+:Person2
+  rdf:type :Matriarch ;
+  :almaMater :SacredHeartConvent ;
+  :birthYear 1890 ;
+  :deathYear 1995 ;
+  :firstName "Rose" ;
+  :hasChild :Person11 ;
+  :hasChild :Person13 ;
+  :hasChild :Person15 ;
+  :hasChild :Person17 ;
+  :hasChild :Person3 ;
+  :hasChild :Person4 ;
+  :hasChild :Person6 ;
+  :hasChild :Person7 ;
+  :hasChild :Person9 ;
+  :lastName "Fitzgerald" ;
+  :middleInitial "Elizabeth" ;
+  :name "Rose Fitzgerald" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/Rose_kennedy.JPG> ;
+  :profession :HomeMaker ;
+  :sex :Female ;
+  :spouse :Person1 ;
+  rdfs:label "Rose Fitzgerald" ;
+.
+:Person20
+  rdf:type :Person ;
+  :almaMater :Columbia ;
+  :almaMater :Harvard ;
+  :birthYear 1957 ;
+  :firstName "Caroline" ;
+  :hasParent :Person4 ;
+  :hasParent :Person5 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Bouvier" ;
+  :name "Caroline Kennedy" ;
+  :profession :NonProfit ;
+  :sex :Female ;
+  :spouse :Person21 ;
+  rdfs:label "Caroline Kennedy" ;
+.
+:Person21
+  rdf:type :Person ;
+  :birthYear 1945 ;
+  :firstName "Edwin" ;
+  :lastName "Schlossberg" ;
+  :middleInitial "Arthur" ;
+  :name "Edwin Schlossberg" ;
+  :sex :Male ;
+  :spouse :Person20 ;
+  rdfs:label "Edwin Schlossberg" ;
+.
+:Person22
+  rdf:type :Person ;
+  :almaMater :Brown ;
+  :almaMater :NYU ;
+  :birthYear 1960 ;
+  :deathYear 1999 ;
+  :firstName "John" ;
+  :hasParent :Person4 ;
+  :hasParent :Person5 ;
+  :lastName "Kennedy" ;
+  :middleInitial "F" ;
+  :name "John Kennedy Jr" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/180px-JFKJr2.jpg> ;
+  :profession :DistrictAttorney ;
+  :profession :Publisher ;
+  :sex :Male ;
+  :spouse :Person23 ;
+  :suffix "Jr"^^xsd:string ;
+  rdfs:label "John Kennedy Jr" ;
+.
+:Person23
+  rdf:type :Person ;
+  :almaMater :BostonUniversity ;
+  :birthYear 1966 ;
+  :deathYear 1999 ;
+  :firstName "Carolyn" ;
+  :lastName "Bessette" ;
+  :name "Carolyn Bessette" ;
+  :profession :Model ;
+  :profession :PR ;
+  :sex :Female ;
+  :spouse :Person22 ;
+  rdfs:label "Carolyn Bessette" ;
+.
+:Person24
+  rdf:type :Person ;
+  :birthYear 1963 ;
+  :deathYear 1963 ;
+  :firstName "Patrick" ;
+  :hasParent :Person4 ;
+  :hasParent :Person5 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Bouvier" ;
+  :name "Patrick Kennedy" ;
+  :sex :Male ;
+  rdfs:label "Patrick Kennedy" ;
+.
+:Person25
+  rdf:type :Person ;
+  :almaMater :Yale ;
+  :birthYear 1954 ;
+  :firstName "Robert" ;
+  :hasParent :Person10 ;
+  :hasParent :Person9 ;
+  :lastName "Shriver" ;
+  :middleInitial "S" ;
+  :name "Robert Shriver III" ;
+  :profession :Attorney ;
+  :profession :Goverment ;
+  :profession :Producer ;
+  :sex :Male ;
+  :suffix "III"^^xsd:string ;
+  rdfs:label "Robert Shriver III" ;
+.
+:Person26
+  rdf:type :Person ;
+  :almaMater :GeorgetownUniversity ;
+  :birthYear 1955 ;
+  :firstName "Maria" ;
+  :hasParent :Person10 ;
+  :hasParent :Person9 ;
+  :lastName "Shriver" ;
+  :middleInitial "Owings" ;
+  :name "Maria Shriver" ;
+  :profession :Reporter ;
+  :sex :Female ;
+  :spouse :Person27 ;
+  rdfs:label "Maria Shriver" ;
+.
+:Person27
+  rdf:type :Person ;
+  :almaMater :UniversityofWisconsin ;
+  :birthYear 1947 ;
+  :firstName "Arnold" ;
+  :lastName "Schwarzenegger" ;
+  :middleInitial "Alois" ;
+  :name "Arnold Schwarzenegger" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/Arnold_Schwarzenegger_2004-01-30.jpg> ;
+  :profession :Actor ;
+  :profession :BodyBuilder ;
+  :profession :Governor ;
+  :sex :Male ;
+  :spouse :Person26 ;
+  rdfs:label "Arnold Schwarzenegger" ;
+.
+:Person28
+  rdf:type :Person ;
+  :almaMater :CatholicUniversity ;
+  :almaMater :UniversityofConnecticut ;
+  :almaMater :Yale ;
+  :birthYear 1959 ;
+  :firstName "Timothy" ;
+  :hasParent :Person10 ;
+  :hasParent :Person9 ;
+  :lastName "Shriver" ;
+  :middleInitial "Perry" ;
+  :name "Timothy Shriver" ;
+  :profession :NonProfit ;
+  :profession :Teacher ;
+  :sex :Male ;
+  :spouse :Person30 ;
+  rdfs:label "Timothy Shriver" ;
+.
+:Person3
+  rdf:type :Person ;
+  :almaMater :Harvard ;
+  :birthYear 1915 ;
+  :deathYear 1944 ;
+  :firstName "Joseph" ;
+  :lastName "Kennedy" ;
+  :middleInitial "P" ;
+  :name "Joseph Kennedy Jr" ;
+  :profession :Navy ;
+  :sex :Male ;
+  :suffix "Jr"^^xsd:string ;
+  rdfs:label "Joseph Kennedy Jr" ;
+.
+:Person30
+  rdf:type :Person ;
+  :birthYear 1956 ;
+  :firstName "Linda" ;
+  :lastName "Potter" ;
+  :middleInitial "Sophia" ;
+  :name "Linda Potter" ;
+  :sex :Female ;
+  :spouse :Person28 ;
+  rdfs:label "Linda Potter" ;
+.
+:Person31
+  rdf:type :Person ;
+  :birthYear 1964 ;
+  :firstName "Mark" ;
+  :hasParent :Person10 ;
+  :hasParent :Person9 ;
+  :lastName "Shriver" ;
+  :middleInitial "Kennedy" ;
+  :name "Mark Shriver" ;
+  :sex :Male ;
+  :spouse :Person32 ;
+  rdfs:label "Mark Shriver" ;
+.
+:Person32
+  rdf:type :Person ;
+  :birthYear 1965 ;
+  :firstName "Jeannie" ;
+  :lastName "Ripp" ;
+  :name "Jeannie Ripp" ;
+  :sex :Female ;
+  :spouse :Person31 ;
+  rdfs:label "Jeannie Ripp" ;
+.
+:Person33
+  rdf:type :Person ;
+  :birthYear 1965 ;
+  :firstName "Anthony" ;
+  :hasParent :Person10 ;
+  :hasParent :Person9 ;
+  :lastName "Shriver" ;
+  :middleInitial "Kennedy" ;
+  :name "Anthony Shriver" ;
+  :sex :Male ;
+  :spouse :Person34 ;
+  rdfs:label "Anthony Shriver" ;
+.
+:Person34
+  rdf:type :Person ;
+  :birthYear 1965 ;
+  :firstName "Alina" ;
+  :lastName "Mojica" ;
+  :name "Alina Mojica" ;
+  :sex :Female ;
+  :spouse :Person33 ;
+  rdfs:label "Alina Mojica" ;
+.
+:Person35
+  rdf:type :Person ;
+  :birthYear 1955 ;
+  :firstName "Christopher" ;
+  :hasParent :Person11 ;
+  :hasParent :Person12 ;
+  :lastName "Lawford" ;
+  :middleInitial "Kennedy" ;
+  :name "Christopher Lawford" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/ChristopherLawford.jpg> ;
+  :profession :Actor ;
+  :sex :Male ;
+  :spouse :Person36 ;
+  rdfs:label "Christopher Lawford" ;
+.
+:Person36
+  rdf:type :Person ;
+  :birthYear 1955 ;
+  :firstName "Jean" ;
+  :lastName "Olsson" ;
+  :name "Jean Olsson" ;
+  :sex :Female ;
+  :spouse :Person35 ;
+  rdfs:label "Jean Olsson" ;
+.
+:Person37
+  rdf:type :Person ;
+  :birthYear 1956 ;
+  :firstName "Sydney" ;
+  :hasParent :Person11 ;
+  :hasParent :Person12 ;
+  :lastName "Lawford" ;
+  :middleInitial "Maleia" ;
+  :name "Sydney Lawford" ;
+  :sex :Female ;
+  :spouse :Person38 ;
+  rdfs:label "Sydney Lawford" ;
+.
+:Person38
+  rdf:type :Person ;
+  :birthYear 1955 ;
+  :firstName "James" ;
+  :lastName "McKelvy" ;
+  :middleInitial "Peter" ;
+  :name "James McKelvy" ;
+  :sex :Male ;
+  :spouse :Person37 ;
+  rdfs:label "James McKelvy" ;
+.
+:Person39
+  rdf:type :Person ;
+  :birthYear 1958 ;
+  :firstName "Victoria" ;
+  :hasParent :Person11 ;
+  :hasParent :Person12 ;
+  :lastName "Lawford" ;
+  :name "Victoria Lawford" ;
+  :sex :Female ;
+  :spouse :Person40 ;
+  rdfs:label "Victoria Lawford" ;
+.
+:Person4
+  rdf:type :Person ;
+  :almaMater :Harvard ;
+  :almaMater :Princeton ;
+  :birthYear 1917 ;
+  :deathYear 1963 ;
+  :firstName "John" ;
+  :hasChild :Person20 ;
+  :hasChild :Person22 ;
+  :hasChild :Person24 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Fitzgerald" ;
+  :name "John Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/204px-John_F._Kennedy,_White_House_color_photo_portrait.jpg> ;
+  :profession :Congressman ;
+  :profession :Navy ;
+  :profession :President ;
+  :profession :Senator ;
+  :sex :Male ;
+  :spouse :Person5 ;
+  rdfs:label "John Kennedy" ;
+.
+:Person40
+  rdf:type :Person ;
+  :birthYear 1953 ;
+  :firstName "Robert" ;
+  :lastName "Pender" ;
+  :middleInitial "B" ;
+  :name "Robert Pender Jr" ;
+  :sex :Male ;
+  :spouse :Person39 ;
+  :suffix "Jr"^^xsd:string ;
+  rdfs:label "Robert Pender Jr" ;
+.
+:Person41
+  rdf:type :Person ;
+  :birthYear 1961 ;
+  :firstName "Robin" ;
+  :hasParent :Person11 ;
+  :hasParent :Person12 ;
+  :lastName "Lawford" ;
+  :middleInitial "Elizabeth" ;
+  :name "Robin Lawford" ;
+  :sex :Female ;
+  rdfs:label "Robin Lawford" ;
+.
+:Person42
+  rdf:type :Person ;
+  :almaMater :Harvard ;
+  :almaMater :UniversityofNewMaxico ;
+  :birthYear 1951 ;
+  :firstName "Kathleen" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Hartington" ;
+  :name "Kathleen Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/Kathleen_Kennedy_Townsend.jpg> ;
+  :profession :Attorney ;
+  :profession :LtGovernor ;
+  :sex :Female ;
+  :spouse :Person43 ;
+  rdfs:label "Kathleen Kennedy" ;
+.
+:Person43
+  rdf:type :Person ;
+  :birthYear 1947 ;
+  :firstName "David" ;
+  :lastName "Townsend" ;
+  :middleInitial "Lee" ;
+  :name "David Townsend" ;
+  :sex :Male ;
+  :spouse :Person42 ;
+  rdfs:label "David Townsend" ;
+.
+:Person44
+  rdf:type :Person ;
+  :birthYear 1952 ;
+  :firstName "Joseph" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "P" ;
+  :name "Joseph Kennedy II" ;
+  :photo "file:c:/Documents and Settings/Dean  Allemang/CourseWorkspace/Webinar/Picture/160px-Joe_Kennedy.jpg"^^xsd:string ;
+  :profession :Congressman ;
+  :sex :Male ;
+  :spouse :Person45 ;
+  :spouse :Person46 ;
+  :suffix "II"^^xsd:string ;
+  rdfs:label "Joseph Kennedy II" ;
+.
+:Person45
+  rdf:type :Person ;
+  :birthYear 1949 ;
+  :firstName "Sheila" ;
+  :lastName "Rauch" ;
+  :middleInitial "Brewster" ;
+  :name "Sheila Rauch" ;
+  :sex :Female ;
+  :spouse :Person44 ;
+  rdfs:label "Sheila Rauch" ;
+.
+:Person46
+  rdf:type :Person ;
+  :birthYear 1957 ;
+  :firstName "Anne" ;
+  :lastName "Kelly" ;
+  :middleInitial "Elizabeth" ;
+  :name "Anne Kelly" ;
+  :sex :Female ;
+  :spouse :Person44 ;
+  rdfs:label "Anne Kelly" ;
+.
+:Person47
+  rdf:type :Person ;
+  :almaMater :Harvard ;
+  :almaMater :UniveristyOfVirginia ;
+  :birthYear 1954 ;
+  :firstName "Robert" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "F" ;
+  :name "Robert Kennedy Jr" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/250px-RobertFKennedyJr.jpg> ;
+  :profession :Attorney ;
+  :profession :Broadcaster ;
+  :profession :Professor ;
+  :sex :Male ;
+  :spouse :Person48 ;
+  :spouse :Person49 ;
+  :suffix "Jr"^^xsd:string ;
+  rdfs:label "Robert Kennedy Jr" ;
+.
+:Person48
+  rdf:type :Person ;
+  :birthYear 1957 ;
+  :firstName "Emily" ;
+  :lastName "Black" ;
+  :middleInitial "Ruth" ;
+  :name "Emily Black" ;
+  :sex :Female ;
+  :spouse :Person47 ;
+  rdfs:label "Emily Black" ;
+.
+:Person49
+  rdf:type :Person ;
+  :birthYear 1960 ;
+  :firstName "Mary" ;
+  :lastName "Richardson" ;
+  :name "Mary Richardson" ;
+  :sex :Female ;
+  :spouse :Person47 ;
+  rdfs:label "Mary Richardson" ;
+.
+:Person5
+  rdf:type :Person ;
+  :almaMater :GeorgeWashington ;
+  :birthYear 1929 ;
+  :deathYear 1994 ;
+  :firstName "Jacqueline" ;
+  :hasChild :Person20 ;
+  :hasChild :Person22 ;
+  :hasChild :Person24 ;
+  :lastName "Bouvier" ;
+  :middleInitial "Lee" ;
+  :name "Jacqueline Bouvier" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/175px-Whitehouseportraitjackie_curvecorrected.jpg> ;
+  :profession :Editor ;
+  :profession :HomeMaker ;
+  :profession :Photographer ;
+  :sex :Female ;
+  :spouse :Person4 ;
+  rdfs:label "Jacqueline Bouvier" ;
+.
+:Person50
+  rdf:type :Person ;
+  :birthYear 1955 ;
+  :deathYear 1984 ;
+  :firstName "David" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Anthony" ;
+  :name "David Kennedy" ;
+  :profession :Writer ;
+  :sex :Male ;
+  rdfs:label "David Kennedy" ;
+.
+:Person51
+  rdf:type :Person ;
+  :birthYear 1956 ;
+  :firstName "Mary" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Courtney" ;
+  :name "Mary Kennedy" ;
+  :sex :Female ;
+  :spouse :Person52 ;
+  :spouse :Person53 ;
+  rdfs:label "Mary Kennedy" ;
+.
+:Person52
+  rdf:type :Person ;
+  :birthYear 1952 ;
+  :firstName "Jeffrey" ;
+  :lastName "Ruhe" ;
+  :middleInitial "Robert" ;
+  :name "Jeffrey Ruhe" ;
+  :sex :Male ;
+  :spouse :Person51 ;
+  rdfs:label "Jeffrey Ruhe" ;
+.
+:Person53
+  rdf:type :Person ;
+  :birthYear 1954 ;
+  :firstName "Paul" ;
+  :lastName "Hill" ;
+  :middleInitial "Michael" ;
+  :name "Paul Hill" ;
+  :sex :Male ;
+  :spouse :Person51 ;
+  rdfs:label "Paul Hill" ;
+.
+:Person54
+  rdf:type :Person ;
+  :birthYear 1958 ;
+  :deathYear 1997 ;
+  :firstName "Michael" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "LeMoyne" ;
+  :name "Michael Kennedy" ;
+  :sex :Male ;
+  :spouse :Person55 ;
+  rdfs:label "Michael Kennedy" ;
+.
+:Person55
+  rdf:type :Person ;
+  :birthYear 1957 ;
+  :firstName "Victoria" ;
+  :lastName "Gifford" ;
+  :middleInitial "Denise" ;
+  :name "Victoria Gifford" ;
+  :sex :Female ;
+  :spouse :Person54 ;
+  rdfs:label "Victoria Gifford" ;
+.
+:Person56
+  rdf:type :Person ;
+  :birthYear 1959 ;
+  :firstName "Mary" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Kerry" ;
+  :name "Mary Kennedy" ;
+  :profession :NonProfit ;
+  :sex :Female ;
+  :spouse :Person57 ;
+  rdfs:label "Mary Kennedy" ;
+.
+:Person57
+  rdf:type :Person ;
+  :birthYear 1957 ;
+  :firstName "Andrew" ;
+  :lastName "Cuomo" ;
+  :middleInitial "Mark" ;
+  :name "Andrew Cuomo" ;
+  :profession :CabinetSecretary ;
+  :sex :Male ;
+  :spouse :Person56 ;
+  rdfs:label "Andrew Cuomo" ;
+.
+:Person58
+  rdf:type :Person ;
+  :birthYear 1963 ;
+  :firstName "Christopher" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "George" ;
+  :name "Christopher Kennedy" ;
+  :sex :Male ;
+  :spouse :Person59 ;
+  rdfs:label "Christopher Kennedy" ;
+.
+:Person59
+  rdf:type :Person ;
+  :birthYear 1962 ;
+  :firstName "Sheila" ;
+  :lastName "Berner" ;
+  :middleInitial "Sinclair" ;
+  :name "Sheila Berner" ;
+  :sex :Female ;
+  :spouse :Person58 ;
+  rdfs:label "Sheila Berner" ;
+.
+:Person6
+  rdf:type :Person ;
+  :birthYear 1918 ;
+  :deathYear "1995"^^xsd:int ;
+  :firstName "Rose" ;
+  :lastName "Kennedy" ;
+  :middleInitial "Marie" ;
+  :name "Rose Kennedy" ;
+  :sex :Female ;
+  rdfs:label "Rose Kennedy" ;
+.
+:Person60
+  rdf:type :Person ;
+  :birthYear 1965 ;
+  :firstName "Matthew" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Maxwell" ;
+  :name "Matthew Kennedy" ;
+  :sex :Male ;
+  :spouse :Person61 ;
+  rdfs:label "Matthew Kennedy" ;
+.
+:Person61
+  rdf:type :Person ;
+  :birthYear 1964 ;
+  :firstName "Victoria" ;
+  :lastName "Stauss" ;
+  :middleInitial "Anne" ;
+  :name "Victoria Stauss" ;
+  :sex :Female ;
+  :spouse :Person60 ;
+  rdfs:label "Victoria Stauss" ;
+.
+:Person62
+  rdf:type :Person ;
+  :almaMater :Brown ;
+  :birthYear 1967 ;
+  :firstName "Douglas" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Harriman" ;
+  :name "Douglas Kennedy" ;
+  :profession :Reporter ;
+  :sex :Male ;
+  :spouse :Person63 ;
+  rdfs:label "Douglas Kennedy" ;
+.
+:Person63
+  rdf:type :Person ;
+  :birthYear 1968 ;
+  :firstName "Molly" ;
+  :lastName "Stark" ;
+  :middleInitial "Elizabeth" ;
+  :name "Molly Stark" ;
+  :sex :Female ;
+  :spouse :Person62 ;
+  rdfs:label "Molly Stark" ;
+.
+:Person64
+  rdf:type :Person ;
+  :almaMater :Brown ;
+  :birthYear 1968 ;
+  :firstName "Rory" ;
+  :hasParent :Person13 ;
+  :hasParent :Person14 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Elizabeth" ;
+  :name "Rory Kennedy" ;
+  :profession :Producer ;
+  :sex :Female ;
+  :spouse :Person65 ;
+  rdfs:label "Rory Kennedy" ;
+.
+:Person65
+  rdf:type :Person ;
+  :birthYear 1967 ;
+  :firstName "Mark" ;
+  :lastName "Bailey" ;
+  :name "Mark Bailey" ;
+  :sex :Male ;
+  :spouse :Person64 ;
+  rdfs:label "Mark Bailey" ;
+.
+:Person66
+  rdf:type :Person ;
+  :birthYear 1957 ;
+  :firstName "Stephen" ;
+  :hasParent :Person15 ;
+  :hasParent :Person16 ;
+  :lastName "Smith" ;
+  :middleInitial "E" ;
+  :name "Stephen Smith Jr" ;
+  :sex :Male ;
+  :suffix "Jr"^^xsd:string ;
+  rdfs:label "Stephen Smith Jr" ;
+.
+:Person67
+  rdf:type :Person ;
+  :birthYear 1960 ;
+  :firstName "William" ;
+  :hasParent :Person15 ;
+  :hasParent :Person16 ;
+  :lastName "Smith" ;
+  :middleInitial "Kennedy" ;
+  :name "William Smith" ;
+  :profession :Doctor ;
+  :sex :Male ;
+  rdfs:label "William Smith" ;
+.
+:Person68
+  rdf:type :Person ;
+  :birthYear 1967 ;
+  :firstName "Amanda" ;
+  :hasParent :Person15 ;
+  :hasParent :Person16 ;
+  :lastName "Smith" ;
+  :middleInitial "Mary" ;
+  :name "Amanda Smith" ;
+  :sex :Female ;
+  :spouse :Person69 ;
+  rdfs:label "Amanda Smith" ;
+.
+:Person69
+  rdf:type :Person ;
+  :birthYear 1966 ;
+  :firstName "Cart" ;
+  :lastName "Hood" ;
+  :middleInitial "Harmon" ;
+  :name "Cart Hood" ;
+  :sex :Male ;
+  :spouse :Person68 ;
+  rdfs:label "Cart Hood" ;
+.
+:Person7
+  rdf:type :Person ;
+  :birthYear 1920 ;
+  :deathYear 1948 ;
+  :firstName "Kathleen" ;
+  :lastName "Kennedy" ;
+  :middleInitial "Agnes" ;
+  :name "Kathleen Kennedy" ;
+  :profession :Volunteer ;
+  :sex :Female ;
+  :spouse :Person8 ;
+  rdfs:label "Kathleen Kennedy" ;
+.
+:Person70
+  rdf:type :Person ;
+  :birthYear 1972 ;
+  :firstName "Kym" ;
+  :hasParent :Person15 ;
+  :hasParent :Person16 ;
+  :lastName "Smith" ;
+  :middleInitial "Maria" ;
+  :name "Kym Smith" ;
+  :sex :Female ;
+  :spouse :Person71 ;
+  rdfs:label "Kym Smith" ;
+.
+:Person71
+  rdf:type :Person ;
+  :birthYear 1967 ;
+  :firstName "Alfred" ;
+  :lastName "Tucker" ;
+  :name "Alfred Tucker" ;
+  :sex :Male ;
+  :spouse :Person70 ;
+  rdfs:label "Alfred Tucker" ;
+.
+:Person72
+  rdf:type :Person ;
+  :birthYear 1960 ;
+  :firstName "Kara" ;
+  :hasParent :Person17 ;
+  :hasParent :Person18 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Anne" ;
+  :name "Kara Kennedy" ;
+  :sex :Female ;
+  :spouse :Person73 ;
+  rdfs:label "Kara Kennedy" ;
+.
+:Person73
+  rdf:type :Person ;
+  :birthYear 1958 ;
+  :firstName "Michael" ;
+  :lastName "Allen" ;
+  :name "Michael Allen" ;
+  :sex :Male ;
+  :spouse :Person72 ;
+  rdfs:label "Michael Allen" ;
+.
+:Person74
+  rdf:type :Person ;
+  :almaMater :UniversityofConnecticut ;
+  :almaMater :Wesleyan-University ;
+  :almaMater :Yale ;
+  :birthYear 1961 ;
+  :firstName "Edward" ;
+  :hasParent :Person17 ;
+  :hasParent :Person18 ;
+  :lastName "Kennedy" ;
+  :middleInitial "M" ;
+  :name "Edward Kennedy Jr" ;
+  :profession :Attorney ;
+  :profession :Business ;
+  :sex :Male ;
+  :spouse :Person75 ;
+  :suffix "Jr"^^xsd:string ;
+  rdfs:label "Edward Kennedy Jr" ;
+.
+:Person75
+  rdf:type :Person ;
+  :birthYear 1959 ;
+  :firstName "Katherine" ;
+  :lastName "Gershman" ;
+  :middleInitial "Anne" ;
+  :name "Katherine Gershman" ;
+  :profession :Professor ;
+  :sex :Female ;
+  :spouse :Person74 ;
+  rdfs:label "Katherine Gershman" ;
+.
+:Person76
+  rdf:type :Person ;
+  :birthYear 1967 ;
+  :firstName "Patrick" ;
+  :hasParent :Person17 ;
+  :hasParent :Person18 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Joseph" ;
+  :name "Patrick Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/160px-Patrick_J._Kennedy,.JPG> ;
+  :profession :Congressman ;
+  :sex :Male ;
+  rdfs:label "Patrick Kennedy" ;
+.
+:Person8
+  rdf:type :Person ;
+  :birthYear 1917 ;
+  :deathYear 1944 ;
+  :firstName "William" ;
+  :lastName "Cavendish" ;
+  :middleInitial "JR" ;
+  :name "William Cavendish" ;
+  :profession :Army ;
+  :sex :Male ;
+  :spouse :Person7 ;
+  rdfs:label "William Cavendish" ;
+.
+:Person9
+  rdf:type :Person ;
+  :birthYear 1921 ;
+  :deathYear "2009"^^xsd:int ;
+  :firstName "Eunice" ;
+  :hasChild :Person25 ;
+  :hasChild :Person26 ;
+  :hasChild :Person28 ;
+  :hasChild :Person31 ;
+  :hasChild :Person33 ;
+  :lastName "Kennedy" ;
+  :middleInitial "Mary" ;
+  :name "Eunice Kennedy" ;
+  :photo <file:c:/Documents%20and%20Settings/Dean%20%20Allemang/CourseWorkspace/Webinar/Picture/180px-Eunice-zurab.jpg> ;
+  :profession :Volunteer ;
+  :sex :Female ;
+  :spouse :Person10 ;
+  rdfs:label "Eunice Kennedy" ;
+.
+:Photographer
+  rdf:type :Profession ;
+.
+:President
+  rdf:type :Profession ;
+.
+:Princeton
+  rdf:type :College ;
+  :ivyLeague "true"^^xsd:boolean ;
+  rdfs:label "Princeton" ;
+.
+:Producer
+  rdf:type :Profession ;
+.
+:Profession
+  rdf:type owl:Class ;
+  rdfs:label "Profession"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Professor
+  rdf:type :Profession ;
+.
+:Publisher
+  rdf:type :Profession ;
+.
+:Reporter
+  rdf:type :Profession ;
+.
+:RosemontCollege
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "Rosemont College" ;
+.
+:SacredHeartConvent
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "Sacred Heart Convent" ;
+.
+:Senator
+  rdf:type :Profession ;
+.
+:Teacher
+  rdf:type :Profession ;
+.
+:Univeristy-of-Virginia
+  rdfs:label "Univeristy of Virginia" ;
+.
+:UniveristyOfVirginia
+  rdf:type :College ;
+  rdfs:label "Univeristy of virginia"^^xsd:string ;
+.
+:UniversityofConnecticut
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "University of Connecticut" ;
+.
+:UniversityofNewMaxico
+  rdf:type :College ;
+  rdfs:label "University of New Maxico" ;
+.
+:UniversityofVirginia
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "University of Virginia" ;
+.
+:UniversityofWisconsin
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "University of Wisconsin" ;
+.
+:Volunteer
+  rdf:type :Profession ;
+.
+:Wesleyan-University
+  rdf:type :College ;
+  :ivyLeague "false"^^xsd:boolean ;
+  rdfs:label "Wesleyan University" ;
+.
+:Writer
+  rdf:type :Profession ;
+.
+:Yale
+  rdf:type :College ;
+  :ivyLeague "true"^^xsd:boolean ;
+  rdfs:label "Yale" ;
+.
+:almaMater
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "alma mater" ;
+  rdfs:range :College ;
+.
+:birthYear
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "year of birth" ;
+  rdfs:range xsd:int ;
+.
+:deathYear
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "year of death" ;
+  rdfs:range xsd:int ;
+.
+:firstName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "first name" ;
+  rdfs:range xsd:string ;
+.
+:hasChild
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "has child" ;
+  rdfs:range :Person ;
+.
+:hasParent
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "has parent" ;
+  rdfs:range :Person ;
+.
+<http://www.franz.com/simple.owl#http://upload.wikimedia.org/wikipedia/commons/f/fd/Joseph_Kennedy.jpg>
+  rdf:type rdfs:Resource ;
+.
+:ivyLeague
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :College ;
+  rdfs:range xsd:boolean ;
+.
+:lastName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "last name" ;
+  rdfs:range xsd:string ;
+.
+:middleInitial
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "MI" ;
+  rdfs:range xsd:string ;
+.
+:name
+  rdf:type owl:DatatypeProperty ;
+  rdfs:subPropertyOf rdfs:label ;
+.
+:photo
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          :Person
+          :College
+        ) ;
+    ] ;
+  rdfs:label "photo"^^xsd:string ;
+.
+:profession
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "has profession" ;
+  rdfs:range :Profession ;
+.
+:sex
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:label "has gender" ;
+  rdfs:range :Gender ;
+.
+:spouse
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has spouse" ;
+.
+:suffix
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:range xsd:string ;
+.
+owl:Nothing
+  rdfs:subClassOf rdfs:Resource ;
+.
